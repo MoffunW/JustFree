@@ -1,0 +1,122 @@
+.project {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        height: 100px;
+        width: 100%;
+        padding: 20px 19px;
+        background: #fff;
+        margin-bottom: 9px;
+        box-shadow: 1px 1.7px 6px #e0edfa;
+        
+        &__main-info {
+                display: flex;
+                align-items: center;
+        }
+        &__image {
+                background: grey;
+                height: 60px;
+                width: 60px;
+                margin-right: 30px;
+        }
+        &__secondary-info {
+                justify-self: center;
+                align-self: center;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                max-width: 670px;
+
+        }
+        &__updated {
+                position: relative;
+                padding: 0 20px;
+                &::after {
+                        content: '';
+                        position: absolute;
+                        right: -10px;
+                        top: 0;
+                        height: 100%;
+                        width: 1px;
+                        background: #dee3e7;
+                }
+        }
+        &__metrics {
+                display: flex;
+                justify-content: space-between;
+                width: 190px;
+                padding: 0 20px;
+        }
+        &__spend-time {
+                display: flex;
+                align-items: center;
+        }
+        &__time {
+                margin-left: 10px;
+        }
+        &__comments {
+                display: flex;
+                align-items: center;
+                &-number {
+                        margin-left: 10px;
+                }
+        }
+        &__bar {
+                align-self: center;
+                height: 8px;
+                width: 100%;
+                max-width: 200px;
+                border-radius: 10px;
+                background: #f5f5f5;
+        }
+        &__done {
+                height: 100%;
+                width: 40%;
+                border-radius: 10px;
+        }
+}
+
+@media (max-width: 1150px) {
+
+        .project {
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &__secondary-info {
+                        display: flex;
+                        align-self: flex-start;
+                        flex-direction: column;
+                        row-gap: 20px;
+                }
+                &__updated {
+                        padding: 0;
+                        &::after {
+                                display: none;
+                        }
+                }
+
+
+                &__metrics {
+                        padding: 0;
+                }
+
+                &__bar {
+                        align-self: start;
+
+                }
+        }
+}
+
+@media (max-width: 700px) {
+
+        .project {
+                &__main-info {
+                        margin-bottom: 30px;
+                }
+
+                &__bar {
+                        width: 200px;
+                }
+        }
+}

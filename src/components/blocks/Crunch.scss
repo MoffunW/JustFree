@@ -1,0 +1,25 @@
+.crunch {
+        &__grid {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                margin: 30px 0;
+                column-gap: 25px;
+        }
+        &__daily {
+                grid-column: 2 / 3;
+                background: #fff;
+        }
+}
+
+
+
+@media (max-width: 1008px) {
+
+        .crunch {
+                &__grid {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 60px;
+                }
+        }
+}

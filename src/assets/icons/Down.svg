@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5.969" viewBox="0 0 10 5.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #37474f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Down_2" data-name="Down 2" class="cls-1" d="M1462.82,33.529a0.461,0.461,0,0,0,0-.68l-0.71-.68a0.529,0.529,0,0,0-.72,0L1458,35.447l-3.42-3.3a0.529,0.529,0,0,0-.72,0l-0.71.68a0.46,0.46,0,0,0,0,.68l4.49,4.327a0.533,0.533,0,0,0,.72,0Z" transform="translate(-1453 -32)"/>
+</svg>

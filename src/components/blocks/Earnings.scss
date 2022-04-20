@@ -1,0 +1,130 @@
+.earnings {
+        &__grid {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap; 
+                gap: 24px;
+                margin-bottom: 200px;
+        }
+        &__card {
+                min-width: 340px;
+                width: 30%;
+                height: 510px;
+                background: #fff;
+                padding-bottom: 25px;
+        }
+
+        &__chart {
+                width: 100%;
+        }
+
+        &__client-hours {
+                padding-bottom: 30px;
+        }
+
+
+        &__overdue {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 10px;
+        }
+        &__total {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 31px;
+        }
+        &__export {
+                text-decoration: underline;
+                margin-left: 30px;
+                height: 40px;
+        }
+        &__chart {
+                position: relative;
+
+                &-wrapper {
+                        position: relative;
+
+                        & .apexcharts-legend {
+                                width: 100%;
+                                justify-self: start;
+                        }
+                }
+        }
+        &__total-hours {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                top: 0;
+                left: 0;
+                font-size: 14px;
+                transform: translateY(-195px);
+        }
+        &__hours {
+                font-size: 23px;
+                line-height: 23px;
+        }
+
+        &__export {
+                cursor: pointer;
+        }
+
+
+}
+
+.apexcharts-legend {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+}
+
+
+@media (max-width: 1008px) {
+
+        .earnings {
+                &__grid {
+                        flex-direction: column;
+                }
+
+        }
+}
+
+@media (max-width: 700px) {
+
+        .earnings {
+                &__client-hours {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                }
+                &__total-hours {
+                        transform: translateY(-190px);
+                }
+                &__hours {
+                        font-size: 17px;
+                }
+                &__subtitle {
+                        font-size: 10px;
+                }
+
+                &__chart {
+                        width: 100%;
+                }
+
+                &__chart-wrapper {
+                        align-self: center;
+                        width: 90%;
+                }
+
+                &__grid {
+                        margin-bottom: 100px;
+                }
+                &__card {
+                        min-width: 250px;
+                        width: 100%
+                }
+        }
+}

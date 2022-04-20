@@ -1,0 +1,38 @@
+.chart-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        padding: 25px 25px 15px;
+
+        &__title {
+                font-size: 21px;
+                line-height: 24px;
+        }
+
+        &__subtitle {
+                color: #78909c;
+                font-size: 13px;
+                line-height: 18px;
+        }
+
+        &__filter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                cursor: pointer;
+        }
+        &__arrow-down {
+                width: 10px;
+                height: 7px;
+                margin-left: 5px;
+        }
+
+}
+
+@media (max-width: 1008px) {
+        .chart-header {
+                padding: 25px 30px 15px;
+        }
+}
